@@ -553,9 +553,11 @@ details[open] summary {
 
 .photo {
   margin: 10px 20px;
+  border-radius: 50%;
+}
+.photo img {
   height: 40px;
   width: 40px;
-  border-radius: 50%;
 }
 
 h2 {

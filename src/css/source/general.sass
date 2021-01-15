@@ -1,0 +1,26 @@
+@import "./actions.sass"
+@import "./search.sass"
+@import "./contact.sass"
+
+.contacts-list
+    display: flex
+    flex-direction: column
+    align-content: center
+    justify-content: center
+    align-items: center
+    margin-top: 30px
+    margin-bottom: 50px
+
+.icon
+    height: 60px
+
+.no-contacts
+    @include adaptiv-font(20, 14)
+    font-weight: 600
+    font-family: 'Kaushan Script', cursive
+.MuiTypography-body1
+    @include adaptiv-font(16, 12)
+
+.PrivateSwitchBase-root-1 
+    @media ( max-width: 630px )
+        padding: 0px

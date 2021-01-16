@@ -69,6 +69,8 @@ class CreatePostPage extends Component {
     findGender = () => {
         let arrayChoose = [], arrayAllGenders = [];
         let resultArray = [];
+        this.setState({ search: true });
+
         if (this.state.checkFemale) {
             arrayChoose.push(this.state.contacts.filter(contact =>
                 contact.gender === "female"
@@ -90,13 +92,22 @@ class CreatePostPage extends Component {
             arrayAllGenders = arrayChoose.flat(Infinity);
         }
 
+        (arrayAllGenders.length !== 0) ? this.setState({ genderFilter: true }) :
+         this.setState({ genderFilter: false });
+
+        //  console.log(this.state.genderFilter, arrayAllGenders.length)
+
         contactsList.map(contact => {
             arrayAllGenders.map(item => {
                 if (contact === item) resultArray.push(contact);
             })
         })
-        this.setState({ contacts: resultArray });
 
+        if (!resultArray.length) {
+            this.setState({ search: false});
+            console.log("array simple", this.state.search);
+        }
+        this.setState({ contacts: resultArray });
     }
     filterGenders = (event) => {
         this.setState({ contacts: contactsList });

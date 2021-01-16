@@ -12,7 +12,7 @@ export const MainPage = () => {
             be</span>
             happy
         </div>
-            <div className='just-me'>Hi, I'm just Dana and this is my 18-en HW for a Cursor</div>
+            <div className='just-me'>Hi, I'm just Dana and this is my 18-en HW for Cursor</div>
         </div>
     )
 }

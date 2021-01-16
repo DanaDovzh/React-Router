@@ -11,7 +11,7 @@
     justify-content: center
     align-items: center
     text-transform: uppercase
-    font-size: 52px
+    @include adaptivFont(52, 24)
     color: #ffe6ff
     animation: shine 2s forwards, flicker 3s infinite
 @keyframes blink
@@ -109,7 +109,7 @@
 
 .just-me
     font-family: 'Conv_Inconsolata-VariableFont_wdth'
-    font-size: 22px
+    @include adaptivFont(22, 12)
     color: #ffe6ff
     margin-left: 10px
     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #790000,-0.2rem 0.1rem 1rem #790000, 0.2rem 0.1rem 1rem #790000, 0 -0.5rem 2rem #f30a0a, 0 0.5rem 3rem #f30a0a

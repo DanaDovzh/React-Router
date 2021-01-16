@@ -1,19 +1,24 @@
+$maxWidth: 1440
+@mixin adaptivFont($pcSize, $mobSize)
+    $addSize: $pcSize - $mobSize
+    $maxWidth: $maxWidth - 320
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
+
 .nav
     &-pages
         display: flex
         flex-direction: column
-        align-items: center
-        // justify-content: center
+        align-items: flex-start
         background-color: #3f0d12
         background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%)
-
-        padding: 20px 20px 0
+        padding: 40px 10px 0
 
     &-link
         color: #ffffff
         text-decoration: none
-        font-size: 24px
         font-weight: 900
+        @include adaptivFont(24, 14)
+        
         font-family: 'Conv_Inconsolata-VariableFont_wdth'
         &:hover
             color: #a89e9e

@@ -16,7 +16,7 @@ function ChooseGender({ checkMale, funcG, checkFemale, checkOther }) {
                             onChange={(e) => funcG(e)}
                             name="checkMale"
                             color="primary"
-                            icon={<FavoriteBorder />} 
+                            icon={<FavoriteBorder />}
                             checkedIcon={<Favorite />}
                         />
                     }
@@ -29,7 +29,7 @@ function ChooseGender({ checkMale, funcG, checkFemale, checkOther }) {
                             checked={checkFemale}
                             onChange={(event) => funcG(event)}
                             name="checkFemale"
-                            icon={<FavoriteBorder />} 
+                            icon={<FavoriteBorder />}
                             checkedIcon={<Favorite />}
                         />
                     }
@@ -42,8 +42,8 @@ function ChooseGender({ checkMale, funcG, checkFemale, checkOther }) {
                             checked={checkOther}
                             onChange={(event) => funcG(event)}
                             name="checkOther"
-                            color = "default"
-                            icon={<FavoriteBorder />} 
+                            color="default"
+                            icon={<FavoriteBorder />}
                             checkedIcon={<Favorite />}
                         />
                     }

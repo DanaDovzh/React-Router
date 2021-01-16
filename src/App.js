@@ -8,10 +8,9 @@ import { ImagesPage } from './components/PagesConstructor/ImagesPage';
 import ContactInfo from './components/Contacts/ContactInfo';
 import './css/style.css';
 import './css/fonts.css';
+
 const Contact = (props) => {
   const currentContact = contactsList.find((idContact) => +idContact.id === +props.match.params.id);
-  console.log(props.match.params.id)
-  console.log(currentContact);
   return (
     <>
       <ContactInfo {...currentContact} />

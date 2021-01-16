@@ -8,7 +8,6 @@ import MarchenPhoto from "../../img/avatars/921110.svg";
 import TeodorPhoto from "../../img/avatars/145859.svg";
 import Contact from "./Contact";
 
-
 export const contactsList = [{
     firstName: "Барней",
     lastName: "Стинсовський",

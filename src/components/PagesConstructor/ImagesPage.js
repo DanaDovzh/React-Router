@@ -15,6 +15,7 @@ import photo12 from '../../img/gallery/12.jpg';
 import photo13 from '../../img/gallery/13.jpg';
 import photo14 from '../../img/gallery/14.jpg';
 import photo15 from '../../img/gallery/15.jpg';
+
 const items = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15];
 const layout = [
     [1 / 4, 1 / 4, 1 / 4, 1 / 4],

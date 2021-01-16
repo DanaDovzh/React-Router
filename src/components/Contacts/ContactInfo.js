@@ -1,5 +1,6 @@
 import React from 'react';
 import Chat from './Chat';
+
 function ContactInfo({ firstName, lastName, phone, photo, describe, gender }) {
     return (
         <>

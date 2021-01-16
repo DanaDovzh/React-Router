@@ -1,9 +1,9 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-function LinksContacts ({props}) {
+function LinksContacts({ props }) {
     return (
-            <NavLink to={`/contacts/${props}`} key={props}>More...</NavLink>
+        <NavLink to={`/contacts/${props}`} key={props}>More...</NavLink>
     )
 }
 

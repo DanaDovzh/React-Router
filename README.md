@@ -14,4 +14,4 @@
 Де test – username у вашому масиві contacts
 
 
-[Результат](https://mini-app-router.netlify.app/)
+[Результат](https://danadovzh.github.io/React-Router/)
